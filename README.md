@@ -2,7 +2,7 @@
 fastner is a Python package to finetune transformer-based models for the Named Entity Recognition task in a simple and fast way.  
 It is based on the torch and the transformer🤗 libraries.
 ## Main features
-The last version of fastner is 0.1.1 and it provides:
+The last version of fastner provides:
 ### Models
 The transformer-based models that you can use for the finetuning are:
  - Bert base uncased (bert-base-uncased)
