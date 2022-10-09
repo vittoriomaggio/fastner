@@ -2,7 +2,7 @@
 fastner is a Python package to finetune transformer-based models for the Named Entity Recognition task in a simple and fast way.  
 It is based on the torch and the transformer🤗 libraries.
 ## Main features
-The last version of fastner is 0.0.1 and it provides:
+The last version of fastner is 0.1.1 and it provides:
 ### Models
 The transformer-based models that you can use for the finetuning are:
  - Bert base uncased (bert-base-uncased)
@@ -38,7 +38,7 @@ The core function is the ***train_test()*** function:
  - test_set: default (*optional*,  *string* or pandas *DataFrame*) - path of the *.csv* test set or the *pandas.DataFrame* object of the test set 
  - model_name (*string*, default: *'bert-base-uncased'*) - name of the model to finetune (available: *'bert-base-uncased'* or *'distilbert-base-uncased'*)
  - train_args (*transformers.TrainingArguments*) - arguments for the training (see [hugginface documenation](https://huggingface.co/docs/transformers/main_classes/trainer#transformers.TrainingArguments))
- - max_len (*integer* or default: 512) - input sequence length (tokenizer)
+ - max_len (*integer*, default: *512*) - input sequence length (tokenizer)
  - loss (*string*, default=*'CE'*) - loss function, the only one available at the moment is the 'CE' Cross Entropy 
  - callbacks (*optional*, *list* of *transformers callbacks*) -  list of transformers callbacks (see [hugginface documentation](https://huggingface.co/docs/transformers/main_classes/callback))
  - device (*integer*, default: *0*) - id of the device on which to perform the training
