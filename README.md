@@ -32,7 +32,6 @@ fastner can be installed using [pip](https://pypi.org/project/fastner/) as follo
 ## How to use it
 Use fastner is very easy! All you need is a dataset that respects the format previously given.
 The core function is the ***train_test()*** function:
-
 **Parameters:**
  - training_set (*string* or pandas *DataFrame*) - path of the *.csv* training set or the *pandas.DataFrame* object of the training set
  - validation_set (*string* or pandas *DataFrame*) - path of the *.csv* validation set or the *pandas.DataFrame* object of the validation set
